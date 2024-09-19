@@ -1,7 +1,7 @@
-; BIND data file for asa.br
+; BIND data file for ifrn.asa.br
 ;
 $TTL    604800
-@       IN      SOA     ns.ifrn.asa.br. root.ifrn.asa.br. (
+@       IN      SOA     ns.pf.ifrn.asa.br. root.ifrn.asa.br. (
                   2024091901 ; Serial (formato YYYYMMDDnn)
                   604800     ; Refresh
                    86400     ; Retry

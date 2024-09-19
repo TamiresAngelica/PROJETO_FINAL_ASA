@@ -1,24 +1,21 @@
 FROM ubuntu:latest
 
-
 RUN apt update -y
-
-
 RUN apt upgrade -y
-
-
 RUN apt install bind9 bind9-utils dnsutils -y
 
 
 # Copy config files
 COPY ifrn.asa.br /etc/bind
+COPY pf.asa.br /etc/bind
 COPY named.conf.local /etc/bind
 
 
 # Expose Ports
 EXPOSE 53/tcp
 EXPOSE 53/udp
-#EXPOSE 953/tcp
+EXPOSE 443/tcp
+EXPOSE 953/tcp
 
 
 # Start the Name Service

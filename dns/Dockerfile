@@ -7,7 +7,7 @@ RUN apt install bind9 bind9-utils dnsutils -y
 
 # Copy config files
 COPY ifrn.asa.br /etc/bind
-COPY pf.asa.br /etc/bind
+COPY pf.ifrn.asa.br /etc/bind
 COPY named.conf.local /etc/bind
 
 

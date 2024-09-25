@@ -14,7 +14,6 @@ COPY named.conf.local /etc/bind
 # Expose Ports
 EXPOSE 53/tcp
 EXPOSE 53/udp
-EXPOSE 443/tcp
 EXPOSE 953/tcp
 
 
